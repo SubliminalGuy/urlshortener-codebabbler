@@ -12,7 +12,10 @@ const supabaseUrl = 'https://hmmepyghcfxqwcvfguul.supabase.co'
 const supabaseKey = process.env['SUPABASE_KEY']
 
 
-const supabase = createClient(supabaseUrl, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMDgwODc5NCwiZXhwIjoxOTM2Mzg0Nzk0fQ.r90f6RrhomVTu6aICqzPnpw28lrNjArK4Sv6k17_vfo")
+
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+
 
 // searchOriginalUrl
 async function getUrl(_id) {
